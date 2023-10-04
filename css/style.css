@@ -1,0 +1,1965 @@
+body{
+ background:#ffffff;
+ color:#1f2024;
+ font-size: 16px;
+ font-family: 'Poppins', sans-serif;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+a {
+    color: #1f2024;
+    text-decoration: underline;
+}
+a:hover {
+    color: #1f2024;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-Regular.woff2') format('woff2'),
+        url('../fonts/LeagueSpartan-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-ExtraBold.woff2') format('woff2'),
+        url('../fonts/LeagueSpartan-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-Medium.woff2') format('woff2'),
+        url('../fonts/LeagueSpartan-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-Black.woff2') format('woff2'),
+        url('../fonts/LeagueSpartan-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-SemiBold.woff2') format('woff2'),
+        url('../fonts/LeagueSpartan-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-Bold.woff2') format('woff2'),
+        url('../fonts/LeagueSpartan-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;	
+}
+*{
+ margin: 0;
+ padding: 0;		
+	
+}
+p{
+  font-size: 16px;
+  color: #1f2024; 
+  font-family: 'Poppins', sans-serif;
+  font-weight:400;
+  line-height: 24px;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 29px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(240 126 25);
+    color: white;
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+.top-bar {
+    background: #292929;
+    color: #343434;
+    padding: 4px 0;
+}
+
+.topbar-link ul {
+    margin: 0;
+    padding: 0;
+}
+.topbar-link ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding-right: 15px;
+}
+.topbar-link ul li a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+	font-weight: 400;
+	text-transform: capitalize;
+	color:#343434;
+}
+.topbar-link ul li a:hover {
+    color: #d70000;
+}
+.current-date {
+    display: none;
+}
+.current-date p {
+    font-size: 15px;
+}
+.current-date p span {
+    color: #fff;
+    padding-right: 10px;
+    font-weight: 400;
+    font-family: 'League Spartan';
+}
+.current-date p span i {
+    background: #f3743a;
+    padding: 3px 5px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+.social-links-top ul li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
+.social-links-top li h5 {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'League Spartan';
+}
+.social-links-top ul li a {
+    color: #fff;
+    font-size: 14px;
+    padding-right: 5px;
+	font-family: 'League Spartan';
+    font-weight: normal;
+}
+.social-links-top ul li a img {
+    width: 22px;
+}
+.social-links-top ul li a.search {
+    font-size: 21px;
+}
+.social-links-top ul li a:hover {
+    color: #f3743a;
+}
+.calendar a {
+    color: #fff;  
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: 'League Spartan';
+    font-weight: normal;
+}
+.calendar {
+    border-right: solid 1px #fff;
+    line-height: 1px;
+    margin-right: 10px;
+}
+.calendar a i {
+    padding-right: 10px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px; 
+    padding-top: 11px;
+    padding-bottom: 11px;  
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {   
+    color: #191919;
+    background: #eee; 
+} 
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #191919;
+    background: #eee;
+}
+.scrollmenu .active {
+    color: #191919;
+    background: #eee;
+}
+nav.navbar {
+    background: #ef7f1b;
+    color: #fff;
+    padding: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+ /* mobile menu start */
+ .scrollmenu {
+    background-color: #ef7f1a;
+    overflow: auto;
+    white-space: nowrap;
+  }  
+  .scrollmenu a {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: capitalize; 
+ }
+ .scrollmenu::-webkit-scrollbar-track{
+    background: #fff;
+ }
+ .scrollmenu::-webkit-scrollbar {   
+    background: #fff;
+    height: 0px;
+}
+  .scrollmenu a:hover {
+    color: #191919;
+    background: #eee;
+  }
+  .mobile-menu {
+    display: none;
+ }
+ .scrollmenu ul li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+ }
+ /* mobile menu end */
+.live-tv {
+    background: #de1f26;
+    padding: 4px 10px;
+    margin: -8px 0;
+}
+.live-tv a {
+    color: #fff;
+    /* padding: 0 10px; */
+    text-transform: uppercase;
+}
+.live-tv i {
+    padding-right: 9px;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("../images/menu-icon.png");
+    fill: black;
+}
+.navbar-dark .navbar-toggler {
+    color: rgb(0 0 0);
+    border-color: rgb(0 0 0);
+}
+/* ----------------------------------------------------------------
+   -------------------------------------------------------------------- */
+/*IN THE NEWS css start  */
+ 
+.news-main {
+    /* padding: 15px 0; */
+    background: #f2f2f2;
+    border-top: solid 1px #ccc;   
+}
+.newsbox-content a  {
+    color: #242424;
+}
+.news-box:hover .newsbox-content h6 {
+    color: #ef7f1b;
+}
+
+.news-main h5 {
+    color: #ef7f1b;
+    font-size: 18px;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    padding: 0 0 5px 0px;
+}
+.news-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;  
+}
+ 
+ /* ----------------------------------------------------------------
+   -------------------------------------------------------------------- */
+
+
+ /* braking news section ----------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+ .news-btm-heding * {
+    font-size: 18px;
+    color: #000;
+    line-height: normal;	
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;	
+}
+/* .news-bottom p {
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+} */
+.news-content *{
+    font-size: 16px; 
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+.news-content h3 {
+    font-size: 18px;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+.time-date p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #797979;
+}
+.breaking-right-news {
+    border: solid 1px #ccc;
+    padding: 15px;
+}
+.breaking-right-news ul li {
+    list-style: none;
+    text-decoration: none;   
+    padding-bottom: 10px;
+    border-bottom: solid 1px #dfdfdf;
+    padding-top: 10px;
+}
+.breaking-right-news ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px; 
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.breaking-right-news ul li .time-date {
+    padding-top: 5px;
+}
+.breaking-right-news ul li:last-child {
+    border-bottom: none;
+}
+/* .breaking-left-news {
+    padding-bottom: 15px;
+} */
+.breaking-left-news img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+.news-bottom img {
+    object-position: top;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+ /* braking news section end ----------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+
+    .mustsee-con .heading1 {
+        position: relative;
+    }
+    .mustsee-con .heading1 h2:before {
+        position: absolute;
+        background: #c4c4c4;
+        content: '';
+        width: 97%;
+        height: 2px;
+        top: 18px;
+        left: 22px;
+        z-index: -1;
+    }
+    .mustsee-con .heading1 h2 {
+        font-size: 30px;
+        font-weight: normal;
+        text-transform: capitalize;
+        font-family: 'League Spartan';
+        background: #fff;
+        width: max-content;
+        padding-right: 20px;
+    }
+
+.mustsee-left img {
+    width: 100%;
+    height: 306px;
+    object-fit: cover;
+    object-position: top;
+}
+.mustsee-left h3 {
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 500;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.ritam-heading {
+    background: #b80000;
+    padding: 6px 10px;
+    color: #fff;
+}
+.ritam-tv {
+    background: #f2efec;
+}
+.ritam-heading i {
+    font-size: 16px;
+}
+.ritam-heading p span {
+    padding-right: 6px;
+}
+.ritam-heading p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'League Spartan';
+    font-weight: 400;
+}
+.ritam-tv ul {
+    margin: 0;
+    padding: 10px;
+}
+.ritam-tv ul li {
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.ritam-tv ul li h4 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'League Spartan';
+    padding-bottom: 5px;
+}
+.ritam-tv ul li p {
+    font-size: 16px;   
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.ritam-tv ul li:last-child {
+    padding-bottom: 0px;
+}
+.ritam-box {
+    position: relative;
+}
+.icon {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    content: '';
+    width: max-content;
+}
+.icon i {
+    background: #fff;
+    padding: 7px 11px;
+}
+.ritam-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+.text h5 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'League Spartan';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.tp-stories {
+    background: #f5f4f3;
+}
+.tp-stris-img-bx img {
+    width: 100%;
+}
+.heading2 h2 {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    position: relative;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+}
+.heading2 h2:before {
+    width: 4px;
+    position: absolute;
+    background: #ef7f1b;
+    left: 0;
+    height: 14px;
+    content: '';
+    /* top: 7px; */
+}
+.stories-bx-content * {
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;   
+}
+/* .tp-strsbtm-content * {
+    font-size: 16px;
+    font-weight: 500;
+    color: #393939;
+} */
+.tp-strsbtm-content * {    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    font-weight: 400;
+    color: #393939;
+}
+.date p span {
+    color: #ef7f1b;
+}
+.date p {
+    font-size: 11px;
+    font-weight: 500;
+}
+.stories-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+    .viedeo-con  .heading3 {
+        position: relative;
+    }
+.viedeo-con .heading3 h2 {
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family: 'League Spartan';    
+    background: #fff;
+    width: max-content;
+    padding-right: 20px;
+}
+ .viedeo-con .heading3 h2:before {
+    position: absolute;
+    background: #c4c4c4;
+    content: '';
+    width: 97%;
+    height: 2px;
+    top: 18px;
+    left: 22px;
+    z-index: -1;
+    max-width: 100%;
+}
+ .Video-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+ }
+ .video-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+.Video-box .video-img {
+    width: 100%;
+}
+ .youtub-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+ }
+ .video-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+ }
+ /* .video-heading-right {
+    position: relative;
+    z-index: 2;
+} */
+.video-heading-right * {   
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    font-size: 18px;
+    color: #fff;
+}
+.video-heading-right a:hover {    
+    color: #fff;
+ }
+
+    .video-heading-right h3:before {
+        background: #33333378;
+        position: absolute;
+        bottom: -23px;
+        content: '';
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        /* padding: 37px 20px; */
+        height: -webkit-fill-available;
+    }   
+    .vido-content * {
+        font-size: 16px;
+        font-weight: 400;
+        color: #393939;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .intrnatnal-con {
+        background: #f5f4f3;
+    }
+    .Ntnal-heading {
+        position: relative;
+        z-index: 1;
+    }
+    .Ntnal-heading h2 {
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'League Spartan';       
+        background: #f5f4f3;
+        width: max-content;
+        padding-right: 20px;
+        display: flex;
+       align-items: center;
+    }
+    .Ntnal-heading h2:before {
+        position: absolute;
+        background: #c4c4c4;
+        content: '';
+        width: 68%;
+        height: 2px;
+        /* top: 18px; */       
+        z-index: -1;
+    }
+    /* .Ntnal-heading h2:after {
+        background: #f5f4f3;
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 172px;
+        height: 100%;
+        z-index: -1;
+        max-width: 100%;
+    } */
+    .International-news img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .international-htext * {
+        font-size: 18px;
+        font-weight: 600;      
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .internl-bottom-news img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .content * {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .hm-plitcs-content *{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        font-weight: 400;
+    }
+ 
+    .International-news p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    } 
+    .national-heading {
+        position: relative;
+    }
+    .national-heading h2:before {
+        position: absolute;
+        background: #c4c4c4;
+        content: '';
+        width: 85%;
+        height: 2px;
+        /* top: 18px; */       
+        max-width: 100%;
+        z-index: -1;
+    }        
+    .national-heading h2 {
+        font-size: 22px;
+        font-weight: normal;
+        text-transform: uppercase;        
+        /* position: relative; */
+        background: #ffffff;
+        width: max-content;
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+    /* .national-heading .view-btn {
+        margin-top: 5px;
+    } */
+    .national-news h3 {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: 'League Spartan';
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .national-news img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .national-bottom-news img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .nationl-news-right img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .sport-box h5 {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'League Spartan';
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+    .sport-heading  {     
+        position: relative;
+    }
+    .sport-heading h2:before {
+        position: absolute;
+        background: #c4c4c4;
+        content: '';
+        width: 100%;
+        height: 2px;
+        top: 18px;
+        right: 0;
+        max-width: 100%;
+        z-index: -1;
+    }
+    /* .sport-heading h2:after {
+        background: #fff;
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 100px;
+        height: 100%;
+        z-index: -1;
+        max-width: 100%;
+    } */
+    .sport-heading h2 {
+        font-size: 30px;
+        font-weight: normal;
+        text-transform: capitalize;
+        font-family: 'League Spartan';
+        background: #fff;
+        width: max-content;
+        padding-right: 20px;
+       
+    }
+    .sport-box img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    header {
+        background: #fff;
+    }
+    /* .top-news-sc .owl-carousel .owl-dots.disabled, .top-news-sc .owl-carousel .owl-nav.disabled {
+        display: block;
+        position: absolute;
+        display: block;
+        top: -50px;
+        right: -5px;
+    } */
+    .top-news-sc button.owl-prev {
+        position: absolute;
+        display: block;
+        top: -50px;
+        right: 35px;
+    }
+    .top-news-sc button.owl-next{
+        display: block;
+        position: absolute;
+        display: block;
+        top: -50px;
+        right: -5px;
+
+    }
+    .top-news-sc button.owl-next span {
+        font-size: 42px !important;
+        vertical-align: top;
+        position: absolute;
+        top: -19px;
+        margin-left: -5px;
+    }
+    .top-news-sc button.owl-prev span {
+        font-size: 42px !important;
+        vertical-align: top;
+        position: absolute;
+        top: -19px;
+        margin-left: -6px;
+    }
+    .top-news-sc .owl-nav button {
+        background: #b0b0b0 !important;
+        color: #fff !important;
+        margin: 0px 5px;      
+        width: 29px;
+        height: 28px;
+    }
+    .heading-con {
+        position: relative;
+    }
+    .heading-con .main-heading h1 {     
+        text-transform: uppercase;        
+        background: #fff;
+        width: max-content;
+        max-width: 100%;
+        padding-right: 20px;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading-con .main-heading h1:before {
+        position: absolute;
+        background: #c4c4c4;
+        content: '';
+        width: 90%;
+        height: 2px;
+        /* top: 18px; */
+        left: 22px;
+        z-index: -1;
+    }
+    .view-btn {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        color: #343434;
+        display: flex;
+    }
+    .view-btn a {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        color: #ef7f1b;
+    }   
+    .view-btnmobile a {
+        color: #ef7f1b;
+        font-size: 12px;
+        text-transform: uppercase;
+        display: none;
+    }
+    .hm-sprt-sc {
+        background: #f5f4f3;
+    }
+    /* .hm-sprt-btm-content h5, .hm-opinion-btm-content h5, .hm-opinin-content h5 {
+        font-size: 20px;
+        font-weight: 500;
+        color: #242424;
+    } */
+    .hm-sprt-btm-content *, .hm-opinion-btm-content *, .hm-opinin-content *   {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        font-weight: 400;
+        color: #242424;
+    }   
+    .hm-sprt-sc h2 {
+        text-transform: uppercase;
+    }
+    .hm-sprt-sc h2:before {       
+        width: 69%;      
+    }
+    .hm-sprt-opin-rgt .heading-con .main-heading h1:before {   
+        width: 84%;      
+    }
+    .style-lftfrst-img-bx img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+
+     .carousel-caption a:hover {
+        font-size: 18px;
+        color: #fff;
+    }
+    .carousel-caption *{
+        font-size: 18px;
+        color: #fff; 
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;      
+    }
+    span.travl-text {
+        background: #70b108;
+        color: #fff;
+        font-size: 14px;
+    }
+    .style-lft-btm-content span * {
+        font-size: 14px;
+    }
+    .style-lft-btm-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .style-rgt-content span.food {
+        background: #ef7f1b;
+        color: #fff;
+        font-size: 14px;
+    }
+    .style-rgt-content span.tech {
+        background: #0073ff;
+        color: #fff;
+        font-size: 14px;
+    }
+    .hm-sprt-frst-bx img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .style-rgt-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .style-rgt-text * {
+        font-size: 16px;
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .style-lft-btm-hding{
+        font-size: 16px;
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    
+
+ /* footer css start  ----------------------------------------------------------------
+----------------------------------------------------------------------------------------- */
+.footer {
+    background: #292929;
+    padding: 21px 0 15px 0;
+	color: #898787;
+	font-size: 16px;
+}
+.foot-about p {
+    color: #727171;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 15px;
+}
+.foot-link h6, .foot-social-link h6 {
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #898787;
+}
+.foot-link ul li {
+  list-style: none;
+  text-decoration: none;  
+}
+.foot-link ul li a {
+    font-size: 14px;
+    color: #727171;
+ }
+ .foot-link ul li a:hover {
+    color: #dcd8d8;
+ }
+ .foot-social-link ul li {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px 10px 2px;
+    width: 30px;
+    height: 30px;
+    background: #474747;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+ }
+    .foot-social-link ul li a i {   
+        color: #ffffff; 
+    }
+
+    .foot-social-link ul li i {
+        padding-top: 7px;
+    }
+ .bottom-footer {
+    border-top: solid 1px #404040;
+    padding-top: 7px;
+    margin-top: 25px;
+ }
+ .bottom-footer p {
+    text-align: center;
+    color: #595858;
+    font-size: 15px;
+    font-weight: 400;
+ }
+  /* inner page css start 
+ ------------------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------------------ */
+ .inner-tp-rightt-cont *{
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    line-clamp: 4; 
+    -webkit-box-orient: vertical;    
+}
+.inner-tp-left img, .inner-tp-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+.inner-tp-center-text * {
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;    
+}
+.inner-top-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;   
+}
+.inner-top-heading {
+    position: relative;
+}
+.inner-top-heading h2:before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 16px;
+    left: 15px;
+    background: #ef7f1b;
+    top: 6px;
+}
+.video-inner {
+    background: #f8f8f8;
+}
+.inr-icon-v {
+    background: #3333334d;    
+}
+.inr-icon-v a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'League Spartan';
+}
+.inr-icon-v i{
+    padding-right: 5px;
+}
+.inr-bx img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    min-height: 100%;
+}
+ .inr-viedo-heading {
+        position: relative;
+    }
+    .inr-viedo-heading h2 {
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;      
+        display: flex;
+        align-items: center;
+    }
+ .inr-viedo-heading h2:before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 16px;
+    left: 0;
+    background: #ef7f1b;
+    /* top: 4px; */
+}
+.inr-poltbusiness-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'League Spartan';
+}
+.inr-poltbusiness-heading h2:before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 16px;
+    left: 0;
+    background: #ef7f1b;
+    top: 4px;
+}
+.inr-politics-img h3, .inr-busis-img h3, .inr-mstread-img h3,
+.inr-fatur-btm-rgt h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.inr-polits-list ul li, .inr-inr-busis-list ul li, .inr-mstread-list ul li {
+    list-style: none;
+    text-decoration: none;
+}
+.inr-polits-list ul li h3, .inr-inr-busis-list ul li h3, .inr-mstread-list ul li h3 {
+    font-size: 17px;
+    font-weight: 400;
+}
+.inr-mstread-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+.inr-frtur-btm-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.inrfatur-btmrgt-list ul li {
+    text-decoration: none;
+    /* margin-left: 15px; */  
+    list-style: none;
+}
+.inrfatur-btmrgt-list ul li h4 {
+    font-size: 17px;
+    font-weight: 400;
+}
+.inr-futr-vcontent h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.inr-busis-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+.inr-politics-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+ /* world page css start  ----------------------------------- */
+
+.wrld-news-bottom-text * {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2024;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.wrld-news-btm-list-text h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #1f2024;
+}
+.wrld-news-btm-list-text * {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;   
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f2024;
+}
+.disc-text * {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    color: #1f2024;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.disc-text2 * {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    color: #1f2024;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.wrld-brkng-news-content * {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f2024;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.wrld-vido-inr {
+    background: #f8f8f8;
+}
+.wrld-vido-text * {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f2024; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.wrld-vido-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2024;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.wold-heading {
+    position: relative;
+}
+.wold-heading h2:after {
+    position: absolute;
+    background: #c4c4c4;
+    content: '';
+    width: 98%;
+    height: 2px;
+    /* top: 18px; */
+    left: 12px;
+    z-index: -1;
+    right: 0;
+}
+.wold-heading h2 {
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'League Spartan';
+    background: #fff;
+    width: max-content;
+    padding-right: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.wrd-heading2 {
+    position: relative;
+}
+.wrd-heading2 h4:before {
+    width: 4px;
+    position: absolute;
+    background: #ef7f1b;
+    left: 0px;
+    height: 14px;
+    content: '';
+    /* top: 8px; */
+}
+.wrd-heading2 h4 {
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.europe-nws-content h6 {
+    font-size: 17px;
+    font-weight: 500;   
+}
+.europe-nws-list-btm .europe-nws-content * {
+    font-size: 16px;
+    font-weight: 400;   
+    font-family: 'Poppins', sans-serif;
+    color: #1f2024;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+ .europe-nws-content * {
+    font-size: 16px;
+    font-weight: 600;  
+    color: #1f2024;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+.wrld-fetrd-content * {
+    font-size: 16px;
+    font-weight: 600;   
+    color: #1f2024;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+.wrld-fetrd-bx-list .wrld-fetrd-content * {
+    font-size: 16px;
+    font-weight: 400;    
+    color: #1f2024;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+.wrld-left-list ul li {
+    text-decoration: none;    
+    margin-left: 15px;
+    margin-bottom: 15px;   
+}
+.wrld-left-list ul li a {
+    text-decoration: none;     
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical; 
+    font-size: 16px;
+    font-weight: 400; 
+    font-family: 'Poppins', sans-serif;  
+}
+.wrld-fetrd-lft-cont * {
+    font-size: 16px;
+    font-weight: 400;    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical; 
+    font-family: 'Poppins', sans-serif;
+}
+.wrld-news-bottom img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: auto;
+}
+.wrld-fetrd-bx img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+    .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+        display: block !important;
+    }
+    .wrld-fetrd-left-btm-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: top;
+    }
+    .google-add img {
+        width: 100%;
+    }
+  /* politics page css start ------------------------ */
+  .pltcs-tpnws-lftimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    }
+    .pltcs-tpnws-lft-content * {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1f2024;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-family: 'Poppins', sans-serif;
+    }
+    .pltcs-lft-txt * {
+        font-size: 16px;
+        font-weight: 400;
+        color: #1f2024;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-family: 'Poppins', sans-serif;
+    }   
+    .pltcs-ltslft-content * {
+        font-size: 18px;
+        font-weight: 600;       
+        color: #1f2024;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-family: 'Poppins', sans-serif;
+    }
+    .wrld-add img {
+        width: 100%;
+        height: auto;
+    }
+    .pltcs-lts-bx img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .binss-vido-icon-v i{
+        padding-right: 10px;
+    }
+    .binss-vido-icon-v a {
+        color: #fff;
+    }
+    .newsbox-content *{
+        font-size: 16px;
+        font-weight: 400;
+        color: #1f2024;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-family: 'Poppins', sans-serif;
+    }
+    .hm-opinion-frst-bx img, .hm-opinion-rgt img {
+        width: 100%;
+        height: auto;
+    }
+    .inr-fatur-btm-img-bx img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .add img, .bisns-add img {
+        width: 100%;
+        height: auto;
+    }
+    .europe-nws-img img {
+        width: 100%;
+        height: auto;
+    }
+    .opinion-tpnws-lft .heading-con .main-heading h1:before {     
+        width: 83%;      
+    }
+    .opin-tpnws-rgt .heading-con .main-heading h1:before {      
+        width: 66%;      
+    }
+    .opin-mor-tp-bx img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .sprt-img-bx img, .sprt-tp-img-bx img {
+        width: 100%;
+        height: auto;
+    }
+    .detali-heading * {
+        font-size: 28px;
+        font-weight: 600;
+        color: #1f2024;
+    }
+    .carousel-title  {
+        background: #f3f3f3;
+        color: #1f2024;        
+    }
+    .carousel-title .carusal-text * {       
+        color: #1f2024;
+        font-size: 16px;
+        font-weight: 400; 
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        font-family: 'Poppins', sans-serif;
+    }       
+    .details-vido .carousel-control-next-icon, .details-vido .carousel-control-prev-icon {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+        background-color: #000;
+        border-radius: 50px;
+    }
+    .details-vido .carousel-control-next, .details-vido .carousel-control-prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        padding: 5px;
+        color: #fff;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: 0.9;
+        transition: opacity .15s ease;
+    }
+    #scroll-logo {
+        display: none;
+    }
+    .fixed-top #scroll-logo {
+        display: block;
+        margin-right: 15px;
+    }
+    .fixed-top #scroll-logo img {
+       height: 40px;
+       padding-top: 5px;       
+    }
+    .loadmor-btn a {
+        background: #f07e19;
+        color: #fff;
+        padding: 10px 10px;
+        text-transform: capitalize;
+        font-size: 19px;
+    }
+  
+
+    /* entertainment page */
+    .ent_top_news .heading{position: relative;}
+    .ent_top_news .heading::before{content: '';position: absolute;display: block;background: #c4c4c4;width: 100%;height: 2px;left: 0;}
+    .ent_top_news .heading h2{font-size: 22px;background: #fff;position: relative;z-index: 1;float: left;padding-right: 20px;font-family: 'Poppins', sans-serif;font-weight: 500;}
+    .ent_top_news .heading a{font-size: 16px;position: relative;z-index: 1;background: #fff;padding-left: 20px;}
+    .ent_int_h, .ent_int_h *{font-size: 18px;font-weight: 600;color: #1f2024;display: -webkit-box;-webkit-line-clamp: 2;line-clamp: 2;overflow: hidden;-webkit-box-orient: vertical;}
+    .ent_int_p, .ent_int_p *{font-size: 16px;font-weight: 400;color: #1f2024;display: -webkit-box;-webkit-line-clamp: 10;line-clamp: 10;overflow: hidden;-webkit-box-orient: vertical;}
+    .ent_pp, .ent_pp *{font-size: 16px;font-weight: 400;color: #1f2024;display: -webkit-box;-webkit-line-clamp: 4;line-clamp: 4;overflow: hidden;-webkit-box-orient: vertical;}
+    /*  */
+    .ent_media .ent_media_h h2{padding-left: 15px;font-size: 22px;font-weight: 600;font-family: 'Poppins', sans-serif;position: relative;font-family: 'Poppins', sans-serif;font-weight: 500;display: flex;align-items: center;}
+    .ent_media .ent_media_h h2:before {width: 4px;position: absolute;background: #ef7f1b;left: 0px;height: 14px;content: '';}
+    .ent_media .ent_media_h a{font-size: 16px;}
+    /*  */
+    .watch_and_listen .ent_media_h h2{padding-left: 15px;font-size: 22px;font-weight: 600;font-family: 'Poppins', sans-serif;position: relative;font-family: 'Poppins', sans-serif;font-weight: 500;display: flex;align-items: center;}
+    .watch_and_listen .ent_media_h h2:before {width: 4px;position: absolute;background: #ef7f1b;left: 0px;height: 14px;content: '';}
+    .watch_and_listen .ent_media_h a{font-size: 16px;}
+    .more_from_media .ent_media_h h2{padding-left: 15px;font-size: 22px;font-weight: 600;font-family: 'Poppins', sans-serif;position: relative;font-family: 'Poppins', sans-serif;font-weight: 500;display: flex;align-items: center;}
+    .more_from_media .ent_media_h h2:before {width: 4px;position: absolute;background: #ef7f1b;left: 0px;height: 14px;content: '';}
+    .more_from_media .ent_media_h a{font-size: 16px;}
+    /* entertainment page */
+
+
+    .overlay{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 100;
+      }
+      
+      .wrapper{
+        width: 100px;
+        height: 100px;
+        background: white;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3px;
+      }
+      
+      .box{
+        width: 50%;
+        height: 50%;
+        flex: 50%;
+        transition: 0.5s;
+        border: 2px solid white;
+      }
+      
+      .box:nth-child(1){
+        animation: load 1s infinite;
+      }
+      
+      .box:nth-child(2){
+        animation: load2 1s infinite;
+        animation-delay: 0.2s;
+      }
+      
+      .box:nth-child(3){
+        animation: load3 1s infinite;
+        animation-delay: 0.7s;
+      }
+      
+      .box:nth-child(4){
+        animation: load4 1s infinite;
+        animation-delay: 0.5s;
+      }
+      
+      @keyframes load {
+        0% { background: rgba(231, 76, 60, 0); }
+        30% { background: rgb(231, 76, 60); }
+      
+        100% { background: rgba(231, 76, 60, 0); }
+      }
+      
+      @keyframes load2 {
+        0% { background: rgba(46, 204, 113, 0); }
+        30% { background: rgb(46, 204, 113); }
+      
+        100% { background: rgba(46, 204, 113, 0); }
+      }
+      
+      @keyframes load3 {
+        0% { background: rgba(230, 126, 34, 0); }
+        30% { background: rgb(230, 126, 34); }
+      
+        100% { background: rgba(230, 126, 34, 0); }
+      }
+      
+      @keyframes load4 {
+        0% { background: rgba(241, 196, 15, 0); }
+        30% { background: rgb(241, 196, 15); }
+      
+        100% { background: rgba(241, 196, 15, 0); }
+      }
+
+
+/* media resposnive css start  
+   ------------------------------------------------------------------------------------------
+   ------------------------------------------------------------------------------------------ */
+
+    @media (max-width: 1300px) {   
+        .opinion-tpnws-lft .heading-con .main-heading h1:before {
+            width: 81%;
+            top: 13px;
+        } 
+        .opin-tpnws-rgt .heading-con .main-heading h1:before {
+            width: 62%;
+            top: 13px;
+        } 
+        .navbar-light .navbar-nav .nav-link{font-size: 14px;}
+        .ent_top_news .heading h2, .ent_media .ent_media_h h2, .watch_and_listen .ent_media_h h2, .more_from_media .ent_media_h h2{font-size: 16px;}
+        .ent_top_news .heading a, .ent_media .ent_media_h a, .more_from_media .ent_media_h a, .watch_and_listen .ent_media_h a{font-size: 10px;}
+        .ent_int_h, .ent_int_h *{font-size: 16px;}
+        .ent_int_p, .ent_int_p *{font-size: 14px;}
+        .ent_pp, .ent_pp *{font-size: 14px;}
+
+        .news-btm-heding *,.inner-tp-center-text *,.wrld-news-bottom-text * { font-size: 16px;  }
+        .disc-text *{ font-size: 14px;  }
+        .news-content * { font-size: 14px;  }
+        .stories-bx-content * { font-size: 14px; }
+        .tp-strsbtm-content * { font-size: 14px; }
+        .vido-content * { font-size: 14px; }
+        .international-htext * { font-size: 16px; }
+        .content * { font-size: 14px; }
+        .hm-plitcs-content * { font-size: 14px; }
+        .hm-sprt-btm-content *, .hm-opinion-btm-content *, .hm-opinin-content * { font-size: 14px; }
+        .style-rgt-text * , .style-lft-btm-hding *{ font-size: 14px; }
+        .video-heading-right * { font-size: 16px; }
+        .newsbox-content *, .inner-tp-rightt-cont *, .wrld-fetrd-lft-cont *,.wrld-brkng-news-content *,
+        .wrld-news-btm-list-text *,.wrld-vido-text * { font-size: 14px; }
+         .europe-nws-list-btm .europe-nws-content *, .wrld-fetrd-bx-list .wrld-fetrd-content * { font-size: 14px; }
+         .pltcs-lft-txt * { font-size: 14px;  }
+         .pltcs-ltslft-content * { font-size: 16px; }
+       
+
+         
+         .heading-con .main-heading h1:before { width: 88%;  }
+         .heading-con .main-heading h1, .national-heading h2, .Ntnal-heading h2 { font-size: 16px;  }
+         .heading2 h2 { font-size: 16px; }
+         .wrd-heading2 h4 {  font-size: 16px; } 
+         .wold-heading h2 { font-size: 21px; }
+         .detali-heading * { font-size: 18px; }
+         .detail-phra *,  .carousel-title *, .carousel-title .carusal-text *, .disc-text2 * { font-size: 14px; } 
+         .wrld-fetrd-content *{ font-size: 16px;}
+         .carousel-caption * {
+            font-size: 14px;       
+        }
+    }
+   
+    @media (max-width: 1100px) { 
+
+    .wrld-tp-news-con .heading-con .main-heading h1:before {         
+        width: 84%;
+    }
+    .pltcs-tp-news-con .heading-con .main-heading h1:before{    
+        width: 85%;      
+    }
+    .pltcs-mor-con .heading-con .main-heading h1:before {      
+        width: 83%;      
+    }
+    .heading-con .main-heading h1:before {      
+        width: 82%;      
+    }
+    .National-con .Ntnal-heading h2:before {       
+        background: transparent;       
+    }
+    .national-heading h2:before {     
+        width: 78%;      
+    }
+    .hm-sprt-opin-rgt .heading-con .main-heading h1:before {
+        width: 77%;
+    }
+    .hm-sprt-sc h2:before {
+        width: 69%;
+        background: transparent;
+    }   
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    
+        
+}
+
+   
+@media (max-width: 991.98px) { 
+
+    /* .stories-box img {       
+        height: 200px;      
+    }
+    .internl-bottom-news img {       
+        height: 200px;      
+    } */
+    .heading-con .main-heading h1:before {      
+        width:78%;
+    }
+    .hm-sprt-opin-rgt .heading-con .main-heading h1:before {
+        width: 79%;
+    }
+    .National-con .national-heading h2:before {      
+        width: 80%;
+    }
+    .wrld-tp-news-con .heading-con .main-heading h1:before {
+        width: 79%;
+    }
+    .Ntnal-heading h2:before {       
+        width: 78%; 
+        background: #c4c4c4;     
+    }
+    .navbar-light .navbar-toggler {
+        color: rgb(255 255 255);
+        border-color: rgb(255 255 255);
+    }
+    .navbar-toggler {
+        padding: 0.25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: .25rem;
+        transition: box-shadow .15s ease-in-out;
+    }
+    nav.navbar {     
+        padding: 10px 0;
+    }
+    .pltcs-tp-news-con .heading-con .main-heading h1:before{    
+        width: 79%;      
+    }
+    .pltcs-mor-con .heading-con .main-heading h1:before {      
+        width: 79%;      
+    }
+    .mobile-menu {
+        display: block;
+    }
+    nav.navbar {       
+        display: none;
+    }
+}
+
+@media (max-width: 767px) { 
+    .news-box img {
+        width: 100%;
+        height: auto;      
+    }
+    .national-heading h2:before {       
+        width: 93%;
+    }
+    .viedeo-con .heading3 h2:before {       
+        width: 91%;    
+    }
+    .mustsee-con .heading1 h2:before {      
+        width: 92%;       
+    }
+    .Ntnal-heading h2:before {      
+        width: 92%;
+    }
+    .National-con .national-heading h2:before {
+        width: 92%;
+    }
+    .hm-sprt-opin-rgt .heading-con .main-heading h1:before {
+        width: 90%;
+    }
+    .wrld-tp-news-con .heading-con .main-heading h1:before {
+        width: 91%;
+    }
+    .wold-heading h2:after {      
+        width: 90%;      
+    }
+    .top-news-sc .owl-item .item{
+        border: none !important;
+    }
+    .logo-con {
+        text-align: center;
+    }
+    /* .heading-con .main-heading h1 {    
+        font-size: 19px;    
+    } */
+    .adds-head { display: none; }
+    .ent_top_news .heading h2, .ent_media .ent_media_h h2, .watch_and_listen .ent_media_h h2, .more_from_media .ent_media_h h2{font-size: 16px;}
+    .ent_top_news .heading a, .ent_media .ent_media_h a, .more_from_media .ent_media_h a{font-size: 10px; display: none;}
+    .ent_int_h, .ent_int_h *{font-size: 14px;}
+    .ent_int_p, .ent_int_p *{font-size: 14px;}
+    .ent_pp, .ent_pp *{font-size: 14px;}
+     
+    .view-btnmobile a {        
+        display: block;
+        text-align: right;
+    }   
+    .view-btn { 
+        display: none;
+    }
+    .heading-con .main-heading h1 {      
+        max-width: 100%;       
+    }
+    .ent_top_news .heading a, .ent_media_h h2 a, .watch_and_listen .ent_media_h a {
+        display: none;
+    }
+    .heading-con .main-heading h1:before {  width: 90%; }
+    .opin-tpnws-rgt .heading-con .main-heading h1:before { width: 90%; }
+
+}
